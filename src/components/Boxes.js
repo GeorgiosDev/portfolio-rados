@@ -5,8 +5,8 @@ import '../styles/Boxes.css';
 
 const Boxes = () => {
   return (
-    <div className="container">
-      <h2 className='text-white text-4xl font-bold mb-2'>Γεώργιος Ράδος-Επιχειρηματικές δραστηριότητες</h2>
+    <div className="container flex flex-col items-center">
+      <h2 className='text-white text-4xl font-bold mb-2 text-center'>Γεώργιος Ράδος-Επιχειρηματικές δραστηριότητες</h2>
       <div className="box-container">
         {/* Box 1 */}
         <Link to="/ecodespoina" className="box-link">
