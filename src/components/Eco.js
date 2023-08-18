@@ -1,43 +1,41 @@
 import React from 'react';
-import img1 from "../assets/images/eco-1.jpg";
-import img2 from "../assets/images/eco-2.jpg";
-import img3 from "../assets/images/eco-3.jpg";
-import img4 from "../assets/images/eco-4.jpg";
-import img5 from "../assets/images/eco-5.jpg";
-import img6 from "../assets/images/eco-6.jpg";
-import img7 from "../assets/images/eco-7.jpg";
-import img8 from "../assets/images/eco-8.jpg";
+import { Link } from 'react-router-dom'; 
+
+import { CarouselComp } from './CarouselEco';
 
 const Eco = () => {
-    const images = [
-        { id: 1, name: "Image 1", source: img1 },
-        { id: 2, name: "Image 2", source: img2 },
-        { id: 3, name: "Image 3", source: img3 },
-        { id: 4, name: "Image 4", source: img4 },
-        { id: 5, name: "Image 5", source: img5 },
-        { id: 6, name: "Image 6", source: img6 },
-        { id: 7, name: "Image 7", source: img7 },
-        { id: 8, name: "Image 8", source: img8 },
-    ];
 
-    return (
-        <div className='bg-blue-400 p-8'>
-            <h2 className="text-4xl text-center mb-6">Οικοδέσποινα, γραφείο αγροτουρισμού και υπαίθριων δραστηριοτήτων</h2>
-            <div className="text-center border border-gray-300 p-4 mb-6">
-                Η εταιρία μας ειδικεύεται στις οικοπεριηγήσεις και στον εναλλακτικό τουρισμό.
-                Σχεδιάζουμε, οργανώνουμε και πραγματοποιούμε ταξίδια που συνδυάζουν φύση και πολιτισμό με πεζοπορία,
-                ποδηλασία και άλλες υπαίθριες δραστηριότητες,
-                όπως επίσης και θεματικά ταξίδια και εκδρομές περιβαλλοντικής ευαισθητοποίησης για μικρούς και μεγάλους.
-            </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                {images.map((image) => (
-                    <div key={image.id} className="w-full aspect-w-3 aspect-h-4">
-                        <img src={image.source} alt={image.name} className="w-full h-full object-cover" />
-                    </div>
-                ))}
-            </div>
+
+return (
+    <div className='bg-bluegray-100 min-h-screen flex justify-center items-center'>
+        <div className='max-w-screen-xl mx-auto p-6'>
+        <h2 className="text-4xl text-center mb-6 text-black font-semibold">Οικοδέσποινα, γραφείο αγροτουρισμού και υπαίθριων δραστηριοτήτων</h2>
+        <div className="text-xl text-center mb-6 text-black">
+            Το γραφείο οικοτουρισμού στον Βουτσαρά Ιωαννίνων αποτελεί έναν παράδεισο περιπέτειας για μικρούς εξερευνητές. Με εξειδικευμένες δραστηριότητες που σχεδιάστηκαν ειδικά για παιδιά, ανοίγει τον δρόμο για μοναδικές εμπειρίες.
+
+                    Το rafting αποτελεί μια συναρπαστική περιπέτεια στα κρύα νερά του ποταμού, δίνοντας την ευκαιρία στους νεαρούς ταξιδιώτες να ανακαλύψουν την ομορφιά της φύσης. Πεζοπορία σε μονοπάτια που οδηγούν σε εντυπωσιακά τοπία ενθαρρύνει την ενασχόληση με το φυσικό περιβάλλον.
+
+                Το κυνήγι θησαυρού αποτελεί ένα διασκεδαστικό παιχνίδι που προάγει τη συνεργασία, ενώ οι μικροί θησαυροί ανακαλύπτονται σε κρυμμένα μέρη, αναδεικνύοντας την παιχνιδιάρικη πλευρά της περιπέτειας.
+
+                Επιπλέον, το γραφείο προσφέρει pool parties, προσφέροντας στα παιδιά μια ασφαλή και διασκεδαστική εμπειρία κολύμβησης και παιχνιδιού. Με εξειδικευμένο προσωπικό που είναι επαγγελματίες στον τομέα του τουρισμού και της παιδείας, το γραφείο εξασφαλίζει την ασφάλεια και την αξιομνημόνευτη εμπειρία για τους μικρούς επισκέπτες. Έτσι, το γραφείο οικοτουρισμού στον Βουτσαρά αναδεικνύεται ως ο καλύτερος προορισμός για οικογένειες που αναζητούν μοναδικές περιπέτειες γεμάτες εκπλήξεις για τα παιδιά τους.
         </div>
-    );
-}
+        <div className="flex justify-center"> 
+            <CarouselComp />
+        </div>
+        </div>
+        <div className="absolute top-0 right-0 mt-2 mr-2">
+            <Link to="/" className="bg-blue-gray-500 hover:bg-blue-gray-800 text-white font-bold py-2 px-4 rounded">
+                Αρχική
+            </Link>
+        </div>
+    </div>
+);
+};
 
 export default Eco;
+
+
+
+
+
+

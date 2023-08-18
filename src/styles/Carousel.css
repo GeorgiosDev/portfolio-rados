@@ -1,0 +1,13 @@
+
+.carousel-arrow-prev,
+.carousel-arrow-next {
+    color: red;
+}
+
+.carousel-arrow-prev {
+    left: 10px;
+}
+
+.carousel-arrow-next {
+    right: 10px;
+}
