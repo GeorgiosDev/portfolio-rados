@@ -46,9 +46,11 @@
 }
 
 .box-3{
-  background-image: url("../assets/images/dimotika.jpg");
+  background-image: url("../assets/images/logo-dimos.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-x: left;
+
 }
 
 .box-4{

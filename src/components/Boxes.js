@@ -3,6 +3,7 @@ import { Link, Outlet } from 'react-router-dom';
 import { Box } from '@chakra-ui/react';
 import '../styles/Boxes.css';
 
+
 const Boxes = () => {
   return (
     <div className="container flex flex-col items-center">
@@ -21,7 +22,7 @@ const Boxes = () => {
         </Link>
 
         {/* Box 3 */}
-        <Link to="/boxes/box3" className="box-link">
+        <Link to="/topiki" className="box-link">
           <h2 className="box-title">Τοπική αυτοδιοίκηση</h2>
           <Box as="button" className="box box-3" backgroundColor="blue.500"></Box>
         </Link>
